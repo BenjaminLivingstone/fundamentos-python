@@ -53,7 +53,7 @@ print(mayoresqueelsegundo(lista))
 
 # Esta longitud, ese valor : escribe una función que acepte dos enteros como parámetros: tamaño y valor. La función debe crear y devolver una lista cuya longitud es igual al tamaño dado y cuyos valores son todos los valores dados.
 
-def longitudvalor(longitud, valor):
+def longitudvalor(longitud=6, valor=2):
     lista=[]
     for x in range (0,longitud):
         lista.append(valor)
