@@ -42,10 +42,9 @@ print(cambiaelapellido(students))
 
 def cambiamessi(sports_directory):
     for sport in sports_directory:
-        for apellido in sports_directory[sport]:
-            for x in range(0,len(sports_directory[sport])):
-                if sports_directory[sport][x]=="Messi":
-                    sports_directory[sport][x]="Andres"
+        for dato in range(0,len(sports_directory[sport])):
+            if sports_directory[sport][dato]=="Messi":
+                sports_directory[sport][dato]="Andres"
     return (sports_directory)
 sports_directory = {
     'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
