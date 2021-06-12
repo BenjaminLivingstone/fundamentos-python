@@ -69,10 +69,11 @@ print(cambiavalor(z))
 
 def iterateDictionary(students):
     for persona in students:
+        print (f"first_name - {persona['first_name']}, last_name - {persona['last_name']} ")
         # print(persona.keys(),persona.values())
-        for dato in persona:
-            print(dato, persona[dato])
-        # print(persona['first_name'], persona['last_name'] )
+        # for dato in persona:
+        #     print(dato, persona[dato])
+        # # print(persona['first_name'], persona['last_name'] )
 students = [
          {'first_name':  'Michael', 'last_name' : 'Jordan'},
          {'first_name' : 'John', 'last_name' : 'Rosales'},
@@ -89,6 +90,7 @@ iterateDictionary(students)
 # first_name - KB, last_name - Tonel
 # Obtén valores de una lista de diccionarios
 # Crea una función iterateDictionary2(key_name, some_list)que, dada una lista de diccionarios y un nombre de clave, la función imprima el valor almacenado en esa clave para cada diccionario. Por ejemplo, iterateDictionary2 ('first_name', students) debería generar:
+
 def iterateDictionary2(info, students=[]):
     for persona in students:
             print(persona[info])
